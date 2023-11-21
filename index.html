@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tohir Wahyudi</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="bg-color4 color1">
+        <nav>
+            <div class="footer">
+                <!-- <img src="assets/foto2.jpg" alt="foto tohir" class="imgFooter"> -->
+                <a href="#home" class="bold color1">tohir Wahyudi</a>
+            </div>
+            <div class="menu">
+                <ul class="bold color1">
+                    <li><a href="#home" class="color1">Home</a></li>
+                    <li><a href="#about" class="color1">About</a></li>
+                    <li><a href="#project" class="color1">Project</a></li>
+                    <li><a href="#contact" class="color1">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="home" style="margin-top: 100px;">
+            <article id="home">
+                <section class="myName">
+                    <p class="bold">Hi!</p>
+                    <p class="bold">I'm <span class="myNameHome">Tohir Wahyudi</span></p>
+                    <p class="bold">I'm <span id="role"></span></p>
+                </section>
+                <section class="description">
+                    <p>
+                    Based in Indonesia, I am fresh graduate in Civil Engineering working at architect company as CAD drafter. I am Passionate about web development and I learn front-end topic at dicoding indonesia.
+                    </p>
+                </section>
+                <a href="#contact" class="bold" style="display: none;">Contact me</a>
+            </article>
+            <aside>
+                <img src="assets/foto2.jpg" alt="foto tohir">
+            </aside>
+        </div>
+        <div class="container">
+            <article id="about">
+                <h1 class="underline">About Me</h1>
+                <div class="content">
+                    <section>
+                        <p>
+                        I'm fresh graduate in civil engineering undergraduate program at Sepuluh Nopember Institut of Technology. I like design and modeling, I can create 3D and 2D building model with Sketchup, Revit, and Autocad. I currently work at architecture company as CAD drafter which create detail engineering drawing (DED) for construction.
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                        I recently have interest about programing especially Web Development topics. I still learning at Dicoding Indonesia in front-end learning path. this website is my first submission at this lesson. I create the layout by Adobe XD, and implementing using HTML and CSS with a little bit JavaScript :D.
+                        </p>
+                    </section>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article id="project">
+                <h1 class="underline">My Projects</h1>
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="show('all')">All</button>
+                    <button class="btn" onclick="show('civil')">Civil Engineering</button>
+                    <button class="btn" onclick="show('design')">Graphic Design</button>
+                    <button class="btn" onclick="show('webDev')">Web Development</button>
+                </div>
+                <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                <div class="container containerCard">
+                    <div class="filterDiv civil">
+                        <img src="assets/Project.jpg" alt="">
+                        <h2>BIM Modeling</h2>
+                        <p>Revit</p>
+                    </div>
+                    <div class="filterDiv civil">
+                        <img src="assets/house.webp" alt="">
+                        <h2>House Design</h2>
+                        <p>Sketchup | Enscape</p>
+                    </div>
+                    <div class="filterDiv civil">
+                        <img src="assets/drafter.jpg" alt="">
+                        <h2>CAD Drafting</h2>
+                        <p>Autocad</p>
+                    </div>
+                    <div class="filterDiv design">
+                        <img src="assets/Irma Fix.webp" alt="">
+                        <h2>Vector Art</h2>
+                        <p>Corel Draw</p>
+                    </div>
+                    <div class="filterDiv webDev">
+                        <img src="assets/code.png" alt="">
+                        <h2>My Home Page v1.0</h2>
+                        <p>HTML | CSS | JS</p>
+                    </div>
+                    <div class="filterDiv design">
+                        <img src="assets/Desktop view.webp" alt="" style="object-fit:scale-down;">
+                        <h2>UI Design</h2>
+                        <p>Adobe XD | Figma</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="container">
+            <article id="contact">
+                <div class="contactText">
+                    <h1 class="underline">Contact</h1>
+                    <p>I would to hear about your project and how I could help. <br> Please fill in the form, and I'll get back to you as soon as possible.</p>
+                </div>
+                <div class="Form">
+                    <form action="" style="color: black;">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Your Name">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </form>
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <img src="assets/foto2.jpg" alt="foto tohir" class="imgFooter">
+            <a href="#home" class="bold color1">tohir <br> Wahyudi</a>
+        </div>
+    </footer>
+</body>
+<script src="/main.js"></script>
+</html>
