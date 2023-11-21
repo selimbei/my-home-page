@@ -1,9 +1,9 @@
-let typeText = document.querySelector("#role");
-let textToBeTyped = "a software engineer";
-let textToBeTypedArr = ["Civil Engineer", "Web Developer"];
-let index = 0;
-let isAdding = true;
-let textToBeTypedIndex = 0;
+var typeText = document.querySelector("#role");
+var textToBeTyped = "a software engineer";
+var textToBeTypedArr = ["Civil Engineer", "Web Developer"];
+var index = 0;
+var isAdding = true;
+var textToBeTypedIndex = 0;
 
 function playAnim() {
   setTimeout(function () {
@@ -91,9 +91,9 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-let civil = document.getElementsByClassName("civil");
-let design = document.getElementsByClassName("design");
-let webDev = document.getElementsByClassName("webDev");
+var civil = document.getElementsByClassName("civil");
+var design = document.getElementsByClassName("design");
+var webDev = document.getElementsByClassName("webDev");
 
 show("all");
 function show(el) {
