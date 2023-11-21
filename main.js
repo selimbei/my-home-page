@@ -1,3 +1,5 @@
+alert("hi");
+
 var typeText = document.querySelector("#role");
 var textToBeTyped = "a software engineer";
 var textToBeTypedArr = ["Civil Engineer", "Web Developer"];
