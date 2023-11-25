@@ -282,20 +282,27 @@ aside img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
   }
 
   .filterDiv {
     box-sizing: border-box;
     padding: 1rem;
-    width: 33.33%;
+    /* width: 33.33%; */
     /* border: 1px solid #191717; */
     height: fit-content;
     transition: 200ms; /* Hidden by default */
   }
 
+  @media screen and (min-width: 1024px) {
+    .filterDiv {
+        width: 20rem;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .filterDiv {
-        width: 50%;
+        width: 20rem;
     }
 }
 
